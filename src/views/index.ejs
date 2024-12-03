@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('components/head', {title: 'Главная - Medanketa'}); %>
+<body>
+    <%- include('components/header'); %>
+    <main class="main home">
+        <section class="section hero-section hero">
+            <div class="hero-section__container container">
+                <div class="hero__content">
+                    <div class="hero__top-title">
+                        MedAnketa
+                    </div>
+                    <div class="hero__top-descr">
+                        Конструктор для медицинских опросов и аналитики
+                    </div>
+                    <div class="hero__title">
+                        Создай <strong>анкету</strong> <button class="hero__btn btn btn--play"></button> за 5 минут
+
+                    </div>
+                </div>
+                <ul class="hero__tooltip">
+                    <li class="hero__tooltip-item">
+                        <a href="" class="hero__tooltip-link">
+                            <div class="hero__tooltip-text">
+                                Для кого сервис?
+                            </div>
+                            <div class="hero__tooltip-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#1C597B" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#1C597B" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hero__tooltip-item">
+                        <a href="" class="hero__tooltip-link">
+                            <div class="hero__tooltip-text has-warning">
+                                <strong>4 простых этапа </strong> создания <br> меданкеты
+                            </div>
+                            <div class="hero__tooltip-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19" stroke="#1C597B" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 5L19 12L12 19" stroke="#1C597B" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <picture class="hero-section__picture">
+                    <source media="(min-width: 1200px)" srcset="/img/hero.png">
+                    <img src="/img/hero-mobile.png" alt="Создай анкету за 5 минут">
+                </picture>
+            </div>
+        </section>
+
+        <section class="section benefit-section benefit">
+            <div class="benefit-section__container container">
+                <p class="benefit-section__title section__title">
+                    Преимущества
+                </p>
+            </div>
+            <div class="benefit-section__container container">
+                <div class="benefit-grid grid">
+                    <div class="benefit-grid__item benefit-card card card--benefit card">
+                        <div class="benefit-card__wrap card__wrap">
+                            <div class="benefit-card__content card__content">
+                                <p class="benefit-card__title card__title">Создай анкету за 5 минут</p>
+                                <p class="benefit-card__descr card__descr">(опросы, тесты, фокус-группы)</p>
+                            </div>
+
+                            <picture class="benefit-card__picture card__picture">
+                                <source media="(min-width: )" srcset="">
+                                <img src="/img/benefit-1.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="benefit-grid__item benefit-card card card--benefit card">
+                        <div class="benefit-card__wrap card__wrap">
+                            <div class="benefit-card__content card__content">
+                                <p class="benefit-card__title card__title">
+                                    Проводи свои опросы в соцсетях и мессенджерах
+                                </p>
+
+                                <p class="benefit-card__descr card__descr">(интеграция с популярными решениями)</p>
+                                <a href="" class="benefit-card__btn btn btn--white card__btn">
+                                    Подробнее
+                                </a>
+                            </div>
+                            <picture class="benefit-card__picture card__picture">
+                                <source media="(min-width: )" srcset="">
+                                <img src="/img/benefit-2.jpg" alt="">
+                            </picture>
+                        </div>
+                        <div class="benefit-card__side card__side">
+                            <p class="benefit-card__side-text card__side-text">
+                                Зарегистрируйтесь на платформе MedAnketa и начните создавать опросы для своих медицинских исследований уже сегодня.
+                            </p>
+                            <a href="#" class="benefit-card__side-btn btn btn--border-primary card__btn">
+                                Зарегистрироваться
+                            </a>
+                        </div>
+                    </div>
+                    <div class="benefit-grid__item benefit-card card card--benefit card">
+                        <div class="benefit-card__wrap card__wrap">
+                            <div class="benefit-card__content card__content">
+                                <p class="benefit-card__title card__title">
+                                    Делай рассылки на свои опросы 
+                                </p>
+
+                                <p class="benefit-card__descr card__descr">(QR код или ссылки)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="benefit-grid__item benefit-card card card--benefit card">
+                        <div class="benefit-card__wrap card__wrap">
+                            <div class="benefit-card__content card__content">
+                                <p class="benefit-card__title card__title">
+                                    Храни <br> свои данные
+                                </p>
+
+                                <p class="benefit-card__descr card__descr">(анкеты, статистика,  респонденты)</p>
+                            </div>
+
+                            <picture class="benefit-card__picture card__picture">
+                                <source media="(min-width: )" srcset="">
+                                <img src="/img/benefit-4.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="benefit-grid__item benefit-card card card--benefit card">
+                        <div class="benefit-card__wrap card__wrap">
+                            <div class="benefit-card__content card__content">
+                                <p class="benefit-card__title card__title">
+                                    Используй готовые варианты ответов
+                                </p>
+
+                                <p class="benefit-card__descr card__descr">(справочники готовых ответов на сайте)</p>
+                            </div>
+
+                            <picture class="benefit-card__picture card__picture">
+                                <source media="(min-width: )" srcset="">
+                                <img src="/img/benefit-5.jpg" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section steps-section steps">
+            <div class="steps-section__container container">
+                <p class="section__title">
+                    Основные этапы создания анкеты
+                </p>
+            </div>
+            <div class="steps-section__container container">
+                <div class="steps__content">
+                    <div class="step-card card card--step">
+                        <p class="step-card__title card__title">
+                            Этап 1
+                        </p>
+                        <p class="step-card__descr">
+                            Создаём анкету или тесты
+                        </p>
+                    </div>
+                    <div class="step-card card card--step">
+                        <p class="step-card__title card__title">
+                            Этап 2
+                        </p>
+                        <p class="step-card__descr">
+                            Делай рассылку или встраивай анкету в соцсети или мессенджеры 
+                        </p>
+                    </div>
+                    <div class="step-card card card--step">
+                        <p class="step-card__title card__title">
+                            Этап 3
+                        </p>
+                        <p class="step-card__descr">
+                            Отслеживай статистику прохождения анкеты
+                        </p>
+                    </div>
+                    <div class="step-card card card--step">
+                        <p class="step-card__title card__title">
+                            Этап 4
+                        </p>
+                        <p class="step-card__descr">
+                            Храни все полученные данные в личном кабинете
+                        </p>
+                    </div>
+                </div>
+                <div class="steps__end">
+                    <div class="steps__quote quote">
+                        <div class="quote__icon">
+                            <div class="quote__icon-wrap">
+                                <div class="quote__icon-text">!</div>
+                                <div class="quote__icon-bg"></div>
+                            </div>
+                        </div>
+                        Все ваши результаты опросов, базы респондентов, и шаблоны анкет будут храниться в вашем личном кабинете на сайте МедАнкета
+                    </div>
+                </div>
+                <picture class="steps__picture">
+                    <source media="(min-width: )" srcset="">
+                    <img src="/img/steps.jpg" alt="">
+                </picture>
+            </div>
+        </section>
+
+        <section class="vocations-section section vocations">
+            <div class="vocations-section__container container">
+                <p class="section__title">
+                    Кому полезен сервис
+                </p>
+            </div>
+            <div class="vocations-section__container container">
+                <div class="vocations__grid vocations-grid">
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Врачи
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-1.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Управленцы
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-2.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Статистики
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-3.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Преподаватели
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-4.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Социологи
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-5.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Маркетологи
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-6.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            Фармацевты
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-7.jpg" alt="">
+                        </picture>
+                    </div>
+                    <div class="vocations__grid-item vocations-card card card--vocations">
+                        <p class="vocations-card__title card__title">
+                            HR
+                        </p>
+                        <picture class="vocations-card__picture card__picture">
+                            <source media="(min-width: )" srcset="">
+                            <img src="/img/vocations-8.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="vocations__qoute">
+                    <p class="vocations__qoute-text">
+                        Зарегистрируйтесь на платформе MedAnketa и начните создавать опросы для своих медицинских исследований уже сегодня.
+                    </p>
+                    <a href="" class="vocations__btn btn btn--primary">
+                        Зарегистрироваться
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="handbook-section section handbook">
+            <div class="handbook-section__container container">
+                <div class="handbook-section__grid">
+                    <div class="handbook-section__side">
+                        <p class="handbook-section__title section__title">
+                            Готовые варианты ответов
+                        </p>
+                        <div class="handbook-section__descr">
+                            <p class="handbook-section__text">
+                                Готовые варинты ответов сформерованные из медецинских справочников, перечней и реестров.
+                            </p>
+                            <p class="handbook-section__text">
+                                Позволяют быстро создать анкету или тест на медцинскую тематику
+                            </p>
+                        </div>
+                        <a href="" class="handbook-section__btn btn btn--primary btn--with-icon">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.83203 13.8126C2.83203 13.3429 3.0186 12.8925 3.3507 12.5604C3.68279 12.2283 4.13321 12.0417 4.60286 12.0417H14.1654" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.60286 1.41675H14.1654V15.5834H4.60286C4.13321 15.5834 3.68279 15.3968 3.3507 15.0648C3.0186 14.7327 2.83203 14.2822 2.83203 13.8126V3.18758C2.83203 2.71793 3.0186 2.26751 3.3507 1.93541C3.68279 1.60332 4.13321 1.41675 4.60286 1.41675Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Смотреть справочники
+                        </a>
+                    </div>
+                    <div class="handbook-section__content">
+                        <ul class="handbook-list">
+                            <li class="handbook-list__item handbook-example">
+                                <div class="handbook-example__head">
+                                    <div class="handbook-example__head-text">
+                                        Международные непатентованные наименования лекарственных средств
+                                    </div>
+                                    <div class="handbook-example__head-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6641 5L12.6641 19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.6641 12L12.6641 19L5.66406 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="handbook-example__body">
+                                    
+                                    <div class="handbook-example__grid-wrap">
+                                        <div class="handbook-example__grid">
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантамёбный кератит (AK)
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthamoeba 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантоцефалёзы	  
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthocephala 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз	     
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acinetobacter baumannii 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз израильский	      
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Actinomyces gerencseriae и Propionibacterium propionicus
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Альвеококкоз   
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Alveococcus multilocularis
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="handbook-list__item handbook-example">
+                                <div class="handbook-example__head">
+                                    <div class="handbook-example__head-text">
+                                        Биоматериалы и материалы для микробиологических исследований
+                                    </div>
+                                    <div class="handbook-example__head-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6641 5L12.6641 19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.6641 12L12.6641 19L5.66406 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="handbook-example__body">
+                                    
+                                    <div class="handbook-example__grid-wrap">
+                                        <div class="handbook-example__grid">
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантамёбный кератит (AK)
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthamoeba 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантоцефалёзы	  
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthocephala 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз	     
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acinetobacter baumannii 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз израильский	      
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Actinomyces gerencseriae и Propionibacterium propionicus
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Альвеококкоз   
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Alveococcus multilocularis
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="handbook-list__item handbook-example">
+                                <div class="handbook-example__head">
+                                    <div class="handbook-example__head-text">
+                                        Антимикробные препараты, применяемые для определения чувствительности
+                                    </div>
+                                    <div class="handbook-example__head-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6641 5L12.6641 19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.6641 12L12.6641 19L5.66406 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="handbook-example__body">
+                                    <div class="handbook-example__grid-wrap">
+                                        <div class="handbook-example__grid">
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантамёбный кератит (AK)
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthamoeba 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантоцефалёзы	  
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthocephala 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз	     
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acinetobacter baumannii 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз израильский	      
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Actinomyces gerencseriae и Propionibacterium propionicus
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Альвеококкоз   
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Alveococcus multilocularis
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="handbook-list__item handbook-example">
+                                <div class="handbook-example__head">
+                                    <div class="handbook-example__head-text">
+                                        Инструментальные диагностические исследования
+                                    </div>
+                                    <div class="handbook-example__head-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6641 5L12.6641 19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.6641 12L12.6641 19L5.66406 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="handbook-example__body">
+                                    <div class="handbook-example__grid-wrap">
+                                        <div class="handbook-example__grid">
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантамёбный кератит (AK)
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthamoeba 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантоцефалёзы	  
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthocephala 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз	     
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acinetobacter baumannii 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз израильский	      
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Actinomyces gerencseriae и Propionibacterium propionicus
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Альвеококкоз   
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Alveococcus multilocularis
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="handbook-list__item handbook-example">
+                                <div class="handbook-example__head">
+                                    <div class="handbook-example__head-text">
+                                        МКБ-10 и справочник субъектов РФ
+                                    </div>
+                                    <div class="handbook-example__head-icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6641 5L12.6641 19" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M19.6641 12L12.6641 19L5.66406 12" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                    </div>
+                                </div>
+                                <div class="handbook-example__body">
+                                    <div class="handbook-example__grid-wrap">
+                                        <div class="handbook-example__grid">
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантамёбный кератит (AK)
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthamoeba 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Акантоцефалёзы	  
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acanthocephala 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз	     
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Acinetobacter baumannii 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Актиномикоз израильский	      
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Actinomyces gerencseriae и Propionibacterium propionicus
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Альвеококкоз   
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Alveococcus multilocularis
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                            <div class="handbook-example__row handbook-lexicon">
+                                                <div class="handbook-lexicon__word">
+                                                    Амёбиаз	    
+                                                </div>
+                                                <div class="handbook-lexicon__decoding">
+                                                    Entamoeba histolytica 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <%- include('components/footer'); %>
+
+    <div class="global-layout"></div>
+    <script src="/js/app.js"></script>
+</body>
+</html>
