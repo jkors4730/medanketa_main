@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+<%- include('components/head', {title}); %>
+<body>
+    <%- include('components/header'); %>
+    <%- include('pages/'+ page ); %>
+    <%- include('components/footer'); %>
+
+    <div class="global-layout"></div>
+    <%- include('components/modals'); %>
+    <script src="/js/app.js"></script>
+</body>
+</html>
