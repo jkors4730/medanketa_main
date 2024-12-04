@@ -18,6 +18,8 @@ mainRoutes.get('/handbooks', async (_req: Request, res: Response) => {
     res.render('page', { page: 'handbooks', title: 'Справочники - Medanketa' });
 });
 
-
+mainRoutes.get('/policy', async (_req: Request, res: Response) => {
+    res.render('page', { page: 'policy', title: 'Политика обработки персональных данных - Medanketa' });
+});
 
 export default mainRoutes;
