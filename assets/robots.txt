@@ -1,0 +1,9 @@
+User-agent: Yandex
+Allow: /
+Clean-param: from
+Clean-param: utm
+Sitemap: https://medanketa.com/sitemap.xml
+
+User-agent: *
+Allow: /
+Sitemap: https://medanketa.com/sitemap.xml
