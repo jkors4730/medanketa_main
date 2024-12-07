@@ -1,0 +1,22 @@
+ <!-- Schema.org: Breadcrumb -->
+<ul class="breadcrumbs-list" itemscope itemtype="https://schema.org/BreadcrumbList">
+    <li class="breadcrumbs-list__item" itemprop="itemListElement" itemscope
+    itemtype="https://schema.org/ListItem">
+        <a href="<%= base %>" itemprop="item" class="breadcrumbs-list__link">
+            <span itemprop="name">Главная</span>
+            <meta itemprop="position" content="1" />
+        </a>
+    </li>
+    <li class="breadcrumbs-list__item">
+        <span class="breadcrumbs-list__sep">
+            /
+        </span>
+    </li>
+    <li class="breadcrumbs-list__item" itemprop="itemListElement" itemscope
+    itemtype="https://schema.org/ListItem">
+        <a href="<%= canonical %>" itemprop="item" class="breadcrumbs-list__link">
+            <span itemprop="name"><%= title %></span>
+            <meta itemprop="position" content="2" />
+        </a>
+    </li>
+</ul>

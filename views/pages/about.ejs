@@ -4,23 +4,8 @@
             <div class="about-content__container container">
                 <div class="about-content__grid">
                     <div class="about-content__col">
-                        <ul class="breadcrumbs-list">
-                            <li class="breadcrumbs-list__item">
-                                <a href="#" class="breadcrumbs-list__link">
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="breadcrumbs-list__item">
-                                <span class="breadcrumbs-list__sep">
-                                    /
-                                </span>
-                            </li>
-                            <li class="breadcrumbs-list__item">
-                                <span class="breadcrumbs-list__text">
-                                    О нас
-                                </span>
-                            </li>
-                        </ul>
+                        <%- include('../components/breadcrumb', { title: 'О нас' }); %>
+                        
                         <h1 class="about__title page-title">
                             О нас
                         </h1>

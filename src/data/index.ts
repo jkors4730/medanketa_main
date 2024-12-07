@@ -4,6 +4,7 @@ import path from 'path';
 export const commonRouteProps = {
     keywords: process.env.KEYWORDS,
     site: process.env.SITE,
+    base: process.env.ENV != 'dev' ? process.env.HOST : '',
     lk_link: process.env.LK_LINK,
     robots: process.env.ROBOTS,
     bar_color: process.env.BAR_COLOR,
