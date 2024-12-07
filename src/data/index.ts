@@ -8,6 +8,8 @@ export const commonRouteProps = {
     lk_link: process.env.LK_LINK,
     robots: process.env.ROBOTS,
     bar_color: process.env.BAR_COLOR,
+    webmaster: process.env.Y_VERIFY,
+    metrika: process.env.Y_METRIKA,
     preload_js: ['/js/app.min.js'],
     prefetch_img: getFiles(path.join(__dirname, '../../assets/img'),'/img/'),
     css: ['/css/style.min.css']
