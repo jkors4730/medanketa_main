@@ -8,5 +8,6 @@ mainRoutes.get('/about', mainController.about);
 mainRoutes.get('/contacts', mainController.contacts);
 mainRoutes.get('/handbooks', mainController.handbooks);
 mainRoutes.get('/policy', mainController.policy);
+mainRoutes.get('/sitemap', mainController.sitemap);
 
 export default mainRoutes;

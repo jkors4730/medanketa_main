@@ -8,7 +8,7 @@ export const commonRouteProps = {
     lk_link: process.env.LK_LINK,
     robots: process.env.ROBOTS,
     bar_color: process.env.BAR_COLOR,
-    preload_js: ['/js/app.js'],
+    preload_js: ['/js/app.min.js'],
     prefetch_img: getFiles(path.join(__dirname, '../../assets/img'),'/img/'),
     css: ['/css/style.min.css']
 };
@@ -47,6 +47,13 @@ export const routerProps = {
         title: `Политика обработки персональных данных - ${process.env.SITE}`,
         description: `Политика обработки персональных данных проекта ${process.env.SITE}`,
         canonical: process.env.HOST + '/policy',
+        ...commonRouteProps
+    },
+    sitemap: {
+        page: 'sitemap',
+        title: `Карта сайта - ${process.env.SITE}`,
+        description: `Карта сайта проекта ${process.env.SITE} для удобной навигации по сайту`,
+        canonical: process.env.HOST + '/sitemap',
         ...commonRouteProps
     }
 };

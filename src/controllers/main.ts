@@ -27,6 +27,10 @@ class MainController {
         render(res, routerProps.policy);
     }
 
+    async sitemap(_req: Request, res: Response) {
+        render(res, routerProps.sitemap);
+    }
+
 }
 
 export const mainController = new MainController();
