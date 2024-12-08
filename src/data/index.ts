@@ -1,6 +1,8 @@
 import { getFiles } from './utils';
 import path from 'path';
 
+const scripts = ['/js/axios.min.js','/js/app.min.js'];
+
 export const commonRouteProps = {
     keywords: process.env.KEYWORDS,
     site: process.env.SITE,
@@ -8,11 +10,12 @@ export const commonRouteProps = {
     lk_link: process.env.LK_LINK,
     robots: process.env.ROBOTS,
     bar_color: process.env.BAR_COLOR,
-    webmaster: process.env.Y_VERIFY,
-    metrika: process.env.Y_METRIKA,
-    preload_js: ['/js/app.min.js'],
+    webmaster: process.env.ENV != 'dev' ? process.env.Y_VERIFY : '',
+    metrika: process.env.ENV != 'dev' ? process.env.Y_METRIKA : '',
+    preload_js: scripts,
     prefetch_img: getFiles(path.join(__dirname, '../../assets/img'),'/img/'),
-    css: ['/css/style.min.css']
+    css: ['/css/style.min.css'],
+    js: scripts,
 };
 
 export const routerProps = {

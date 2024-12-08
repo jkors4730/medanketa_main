@@ -88,5 +88,41 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  const closeModal = () => {
+    document.querySelector('#support_form').classList.remove('active');
+    layout.classList.remove('active');
+    body.classList.remove('active');
+  }
+
+  document.querySelector('#support_form_close').addEventListener('click', (event) => {
+    event.preventDefault();
+
+    closeModal();
+  });
+
+  document.querySelector('#support_form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    const data = {
+      name: document.querySelector('#support_user_name').value,
+      email: document.querySelector('#support_user_email').value,
+      phone: document.querySelector('#support_user_phone').value,
+      message: document.querySelector('#support_user_message').value,
+    };
+
+    if ( data.email && data.message ) {
+      const res = await axios.post( '/api/email', data );
+      console.log( res );
+
+      document.querySelector('#support_form').reset();
+      closeModal();
+
+      alert('Сообщение в поддержку отправлено!');
+    }
+    else {
+      alert('Email и Сообщение - обязательные поля!')
+    }
+  });
+
     
 });

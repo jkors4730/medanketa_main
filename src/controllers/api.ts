@@ -1,6 +1,7 @@
 import { Request, Response } from 'express';
 import fs from 'fs';
 import path from 'path';
+import { mailService } from '../services/mail';
 
 class ApiController {
 
@@ -32,6 +33,16 @@ class ApiController {
         res.json({
             success: true
         });
+    }
+
+    async email(req: Request, res: Response) {
+        const { name, email, phone, message } = req.body;
+
+        mailService.sendSupportMail( { name, email, phone, message } );
+
+        res.json({
+            message: 'ok'
+        })
     }
 
 }

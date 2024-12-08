@@ -5,4 +5,6 @@ const apiRoutes = Router();
 
 apiRoutes.get('/sitemap', apiController.sitemap);
 
+apiRoutes.post('/email', apiController.email);
+
 export default apiRoutes;

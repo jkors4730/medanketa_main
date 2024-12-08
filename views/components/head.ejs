@@ -29,6 +29,9 @@
     <% }); %>
     <% css.forEach(function(link){ %><link rel="stylesheet" href="<%= link %>">
     <% }); %>
+    <% js.forEach(function(script){ %><script defer src="<%= script %>"></script>
+    <% }); %>
+    
     <%- webmaster %>
     <%- metrika %>
 </head>
