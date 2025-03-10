@@ -17,4 +17,4 @@ app.set('view engine', 'ejs');
 app.use('/', mainRoutes);
 app.use('/api', apiRoutes);
 
-app.listen(process.env.PORT);
+app.listen(process.env.PORT ?? '3003');

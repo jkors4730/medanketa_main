@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const header = document.querySelector('.header');
   const burger = document.querySelector('.header__burger');
+  const burger_support = document.querySelector('.burger_support');
   const nav = document.querySelector('.header__nav');
   const layout = document.querySelector('.global-layout');
   const body = document.querySelector('body');
@@ -70,9 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   /* SHIT CODE */
 
-  /* -- Layout control click */
-
-  layout.addEventListener('click', function() {
+  function closeBurger() {
     if (nav.classList.contains('active')) {
       burger.classList.remove('active');
       nav.classList.remove('active');
@@ -80,13 +79,17 @@ document.addEventListener('DOMContentLoaded', function() {
       body.classList.remove('active');
       header.classList.remove('active');
     }
-  
+
     if (document.querySelector('.form--modal.active')) {
       document.querySelector('.form--modal.active').classList.remove('active');
       layout.classList.remove('active');
       body.classList.remove('active');
     }
-  });
+  }
+
+  /* -- Layout control click */
+  burger_support.addEventListener('click', closeBurger)
+  layout.addEventListener('click', closeBurger);
 
   const closeModal = () => {
     document.querySelector('#support_form').classList.remove('active');
@@ -124,5 +127,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
-    
+
 });

@@ -2991,3 +2991,13 @@ a {
 .form__btn-send {
   width: 100%;
 }
+
+.header-menu__item--mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header-menu__item--mobile {
+    display: block;
+  }
+}
